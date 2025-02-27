@@ -20,13 +20,13 @@ class ViewPagerAdapter(
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.view_pager_item, parent, false)
-        )
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder(
+        LayoutInflater.from(parent.context).inflate(R.layout.view_pager_item, parent, false)
+    )
 
     override fun getItemCount(): Int = list.size
+
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(list[position])
     }
