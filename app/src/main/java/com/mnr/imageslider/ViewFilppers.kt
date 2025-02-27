@@ -49,11 +49,11 @@ class ViewFilppers : AppCompatActivity() {
             flipInterval = 3000
             startFlipping()
         }
-        pageIndicator(
-            position = binding.viewFlipperId.displayedChild,
-            dotCount = images.size,
-            layout = binding.indicatorLayoutId
-        )
+//        pageIndicator(
+//            position = binding.viewFlipperId.displayedChild,
+//            dotCount = images.size,
+//            layout = binding.indicatorLayoutId
+//        )
 
     }
 }

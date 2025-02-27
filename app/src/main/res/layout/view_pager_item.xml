@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:elevation="0dp"
-    app:cardBackgroundColor="@android:color/transparent"
-    app:cardCornerRadius="12dp"
-    app:cardUseCompatPadding="false">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <ImageView
         android:id="@+id/img_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
         android:scaleType="fitXY"
-        android:src="@drawable/number1"
-        app:shapeAppearanceOverlay="@style/roundedImageView" />
+        android:src="@drawable/number1" />
 
 
-</androidx.cardview.widget.CardView>
+</FrameLayout>

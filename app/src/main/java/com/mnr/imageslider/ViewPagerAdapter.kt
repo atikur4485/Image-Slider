@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mnr.imageslider.databinding.ViewPagerItemBinding
 
-class viewPagerAdapter(
+class ViewPagerAdapter(
     private val list: List<String>
-) : RecyclerView.Adapter<viewPagerAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ViewPagerItemBinding.bind(itemView)
         fun bind(url: String) {
