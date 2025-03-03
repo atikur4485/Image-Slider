@@ -8,43 +8,10 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_id"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:layout_marginHorizontal="45dp"
-        android:elevation="0dp"
-        app:cardBackgroundColor="@android:color/transparent"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="0dp"
-        app:cardMaxElevation="0dp">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </androidx.cardview.widget.CardView>
+    <include
+        android:id="@+id/layout_image_slider"
+        layout="@layout/inc_image_slider" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabDots"
-        android:layout_width="wrap_content"
-        android:layout_below="@id/card_id"
-        android:layout_centerHorizontal="true"
-        android:background="@color/white"
-        android:layout_height="wrap_content"
-        app:tabBackground="@drawable/tab_indicators"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp" />
 
-    <!--    <LinearLayout-->
-    <!--        android:id="@+id/indicator_layout_id"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@id/card_id"-->
-    <!--        android:layout_centerHorizontal="true"-->
-    <!--        android:layout_gravity="center_horizontal"-->
-    <!--        android:layout_marginTop="24dp"-->
-    <!--        android:background="@android:color/transparent"-->
-    <!--        android:orientation="horizontal" />-->
 </RelativeLayout>
